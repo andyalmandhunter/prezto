@@ -12,6 +12,8 @@ fi
 
 # Customize to your needs...
 
+alias glm='git log --topo-order --graph --pretty=format:"${_git_log_oneline_format}"'
+
 # Better shortcut for Emacs:
 function en {
     for f in "$@"
