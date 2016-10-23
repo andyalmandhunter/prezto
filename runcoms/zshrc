@@ -11,3 +11,12 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# Better shortcut for Emacs:
+function en {
+    for f in "$@"
+    do
+        test -e $f || touch $f
+    done
+    open -n -a /Applications/Emacs.app "$@"
+}
