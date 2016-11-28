@@ -39,9 +39,6 @@ if (( $+commands[virtualenvwrapper.sh] )); then
   # Set the directory where virtual environments are stored.
   export WORKON_HOME="$HOME/.virtualenvs"
 
-  # Disable the virtualenv prompt.
-  VIRTUAL_ENV_DISABLE_PROMPT=1
-
   source "$commands[virtualenvwrapper.sh]"
 fi
 
